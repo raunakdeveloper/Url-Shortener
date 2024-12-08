@@ -21,7 +21,7 @@ exports.createShortUrl = async (req, res) => {
 
     // If the URL does not exist, generate a new short URL
     const shortCode = generateShortCode();
-    const shortUrl = `${process.env.FRONTEND_URL}/${shortCode}`;
+    const shortUrl = `https://tinyfy.vercel.app/${shortCode}`;
 
     // Create a new url
     const url = new Url({

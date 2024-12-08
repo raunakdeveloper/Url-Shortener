@@ -23,7 +23,7 @@ admin.initializeApp({
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://tinyfy.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
